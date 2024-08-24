@@ -1,50 +1,27 @@
-# Welcome to your Expo app 👋
+# React Native Journal App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple journal app built with React Native using Expo. The app allows users to create, view, edit journal entries stored locally on their devices using AsyncStorage. Navigation between screens is handled using expo-router, with a clean and user-friendly interface.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Journal Entry List**: View a list of all journal entries, truncated with ellipses if the text is too long.
+- **Create New Entry**: Add a new journal entry with a title and body.
+- **Edit Entry**: Edit the title and body of an existing journal entry.
+- **Details Page**: View full details of a selected journal entry.
+- **Local Storage**: Journal entries are saved locally using AsyncStorage.
 
-   ```bash
-   npm install
-   ```
+## Screens
 
-2. Start the app
+1. **HomeScreen**: Displays a list of all journal entries with options to edit or delete them.
+2. **NewEntryScreen**: Allows users to create a new journal entry.
+3. **EditEntryScreen**: Allows users to edit an existing journal entry.
+4. **DetailsScreen**: Displays detailed information about a selected journal entry.
 
-   ```bash
-    npx expo start
-   ```
+## Installation
 
-In the output, you'll find options to open the app in a
+1. **Clone the repository**:
+   git clone https://github.com/yourusername/journal-app.git
+   cd journal
+   npx expo run:android
+   npm start
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
